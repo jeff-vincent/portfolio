@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest trends and best practices in modern web development, from performance optimization to accessibility.">
+    <meta name="author" content="Jeff Vincent">
+    <meta name="keywords" content="web development, JavaScript, performance, accessibility, best practices">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://your-domain.com/blog/modern-web-development-practices.html">
+    <meta property="og:title" content="Modern Web Development Practices">
+    <meta property="og:description" content="Explore the latest trends and best practices in modern web development, from performance optimization to accessibility.">
+    <meta property="og:image" content="https://your-domain.com/assets/images/blog1.jpg">
+    <meta property="article:author" content="Jeff Vincent">
+    <meta property="article:published_time" content="2025-10-20T00:00:00Z">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-domain.com/blog/modern-web-development-practices.html">
+    <meta property="twitter:title" content="Modern Web Development Practices">
+    <meta property="twitter:description" content="Explore the latest trends and best practices in modern web development, from performance optimization to accessibility.">
+    <meta property="twitter:image" content="https://your-domain.com/assets/images/blog1.jpg">
+
+    <title>Modern Web Development Practices - Jeff Vincent</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="../assets/css/blog-post.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Jeff Vincent</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html" class="nav-link">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Blog</a> / 
+                <span>Modern Web Development Practices</span>
+            </div>
+            <h1>Modern Web Development Practices</h1>
+            <div class="article-meta">
+                <div class="author-info">
+                    <img src="../assets/images/profile.jpg" alt="Jeff Vincent" class="author-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="author-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-details">
+                        <span class="author-name">Jeff Vincent</span>
+                        <span class="author-title">Full Stack Developer</span>
+                    </div>
+                </div>
+                <div class="article-details">
+                    <span class="publish-date">
+                        <i class="fas fa-calendar"></i>
+                        October 20, 2025
+                    </span>
+                    <span class="read-time">
+                        <i class="fas fa-clock"></i>
+                        8 min read
+                    </span>
+                    <span class="category">
+                        <i class="fas fa-tag"></i>
+                        Web Development
+                    </span>
+                </div>
+            </div>
+            <div class="social-share">
+                <span>Share this article:</span>
+                <button data-share="twitter" class="share-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button data-share="facebook" class="share-btn facebook">
+                    <i class="fab fa-facebook"></i>
+                </button>
+                <button data-share="linkedin" class="share-btn linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </button>
+                <button data-share="copy" class="share-btn copy">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="blog-post">
+                    <div class="featured-image">
+                        <img src="../assets/images/blog1.jpg" alt="Modern Web Development" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <p class="lead">
+                            The landscape of web development is constantly evolving, with new technologies, frameworks, and best practices emerging regularly. In this comprehensive guide, we'll explore the most important modern web development practices that every developer should know in 2025.
+                        </p>
+
+                        <h2>Performance First Approach</h2>
+                        <p>
+                            Modern web development prioritizes performance from the ground up. This means considering load times, interactivity, and visual stability as core requirements rather than afterthoughts.
+                        </p>
+
+                        <h3>Core Web Vitals</h3>
+                        <p>
+                            Google's Core Web Vitals have become the standard for measuring web performance:
+                        </p>
+                        <ul>
+                            <li><strong>Largest Contentful Paint (LCP):</strong> Measures loading performance</li>
+                            <li><strong>First Input Delay (FID):</strong> Measures interactivity</li>
+                            <li><strong>Cumulative Layout Shift (CLS):</strong> Measures visual stability</li>
+                        </ul>
+
+                        <h3>Optimization Techniques</h3>
+                        <p>
+                            Here are some key techniques for optimizing web performance:
+                        </p>
+
+                        <pre><code class="language-javascript">
+// Lazy loading images
+const images = document.querySelectorAll('img[data-lazy]');
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      img.src = img.dataset.lazy;
+      img.classList.remove('lazy');
+      imageObserver.unobserve(img);
+    }
+  });
+});
+
+images.forEach(img => imageObserver.observe(img));
+                        </code></pre>
+
+                        <h2>Progressive Web Apps (PWAs)</h2>
+                        <p>
+                            PWAs combine the best of web and mobile apps, offering offline functionality, push notifications, and app-like experiences directly in the browser.
+                        </p>
+
+                        <blockquote>
+                            "Progressive Web Apps are the future of mobile web development, providing native app experiences through web technologies."
+                        </blockquote>
+
+                        <h3>Key PWA Features</h3>
+                        <ol>
+                            <li>Service Workers for offline functionality</li>
+                            <li>Web App Manifest for installability</li>
+                            <li>HTTPS requirement for security</li>
+                            <li>Responsive design for all devices</li>
+                        </ol>
+
+                        <h2>Modern JavaScript Practices</h2>
+                        <p>
+                            ES6+ features have revolutionized JavaScript development. Here are some essential modern JavaScript practices:
+                        </p>
+
+                        <pre><code class="language-javascript">
+// Modern async/await pattern
+async function fetchUserData(userId) {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    const userData = await response.json();
+    return userData;
+  } catch (error) {
+    console.error('Error fetching user data:', error);
+    throw error;
+  }
+}
+
+// Destructuring and spread operator
+const { name, email, ...otherProps } = userData;
+const updatedUser = { ...userData, lastLogin: new Date() };
+                        </code></pre>
+
+                        <h2>Component-Based Architecture</h2>
+                        <p>
+                            Modern frameworks like React, Vue, and Angular promote component-based development, leading to more maintainable and reusable code.
+                        </p>
+
+                        <h3>Benefits of Component-Based Development</h3>
+                        <ul>
+                            <li>Reusability across different parts of the application</li>
+                            <li>Easier testing and debugging</li>
+                            <li>Better separation of concerns</li>
+                            <li>Improved collaboration among team members</li>
+                        </ul>
+
+                        <h2>Accessibility Best Practices</h2>
+                        <p>
+                            Web accessibility ensures that websites are usable by people with disabilities. It's not just good practice—it's often legally required.
+                        </p>
+
+                        <h3>WCAG Guidelines</h3>
+                        <p>
+                            The Web Content Accessibility Guidelines (WCAG) provide a comprehensive framework:
+                        </p>
+                        <ul>
+                            <li><strong>Perceivable:</strong> Information must be presentable in ways users can perceive</li>
+                            <li><strong>Operable:</strong> Interface components must be operable</li>
+                            <li><strong>Understandable:</strong> Information and UI operation must be understandable</li>
+                            <li><strong>Robust:</strong> Content must be robust enough for various assistive technologies</li>
+                        </ul>
+
+                        <pre><code class="language-html">
+&lt;!-- Semantic HTML with proper ARIA labels --&gt;
+&lt;button aria-label="Close dialog" onclick="closeModal()"&gt;
+  &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;img src="chart.png" alt="Sales increased by 25% in Q3 2025"&gt;
+
+&lt;form&gt;
+  &lt;label for="email"&gt;Email Address&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required 
+         aria-describedby="email-help"&gt;
+  &lt;div id="email-help"&gt;We'll never share your email&lt;/div&gt;
+&lt;/form&gt;
+                        </code></pre>
+
+                        <h2>Security Considerations</h2>
+                        <p>
+                            Security should be built into every aspect of modern web development. Here are key security practices:
+                        </p>
+
+                        <h3>Common Security Measures</h3>
+                        <div class="info-box">
+                            <h4>Essential Security Practices</h4>
+                            <ul>
+                                <li>Always use HTTPS</li>
+                                <li>Implement Content Security Policy (CSP)</li>
+                                <li>Sanitize user inputs</li>
+                                <li>Use secure authentication methods</li>
+                                <li>Keep dependencies updated</li>
+                            </ul>
+                        </div>
+
+                        <h2>Development Tools and Workflow</h2>
+                        <p>
+                            Modern development workflows leverage powerful tools to improve productivity and code quality:
+                        </p>
+
+                        <h3>Essential Tools</h3>
+                        <ul>
+                            <li><strong>Version Control:</strong> Git with platforms like GitHub or GitLab</li>
+                            <li><strong>Package Managers:</strong> npm, yarn, or pnpm</li>
+                            <li><strong>Build Tools:</strong> Vite, Webpack, or Parcel</li>
+                            <li><strong>Code Quality:</strong> ESLint, Prettier, and TypeScript</li>
+                            <li><strong>Testing:</strong> Jest, Cypress, or Playwright</li>
+                        </ul>
+
+                        <h2>Conclusion</h2>
+                        <p>
+                            Modern web development is about creating fast, accessible, secure, and maintainable applications. By following these practices and staying updated with the latest trends, developers can build exceptional web experiences that serve users effectively.
+                        </p>
+
+                        <p>
+                            Remember that the web development landscape continues to evolve. Stay curious, keep learning, and don't be afraid to experiment with new technologies and approaches.
+                        </p>
+
+                        <div class="article-tags">
+                            <h4>Tags:</h4>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Best Practices</span>
+                            <span class="tag">PWA</span>
+                            <span class="tag">Accessibility</span>
+                            <span class="tag">Security</span>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="article-sidebar">
+                    <div class="author-card">
+                        <img src="../assets/images/profile.jpg" alt="Jeff Vincent" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="author-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Jeff Vincent</h3>
+                        <p>Full Stack Developer passionate about creating exceptional web experiences and sharing knowledge with the community.</p>
+                        <div class="author-social">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="related-posts">
+                        <h3>Related Posts</h3>
+                        <div class="related-post">
+                            <a href="building-scalable-apis.html">
+                                <h4>Building Scalable APIs</h4>
+                                <span class="post-date">October 15, 2025</span>
+                            </a>
+                        </div>
+                        <div class="related-post">
+                            <a href="react-hook-patterns.html">
+                                <h4>Advanced React Hook Patterns</h4>
+                                <span class="post-date">October 5, 2025</span>
+                            </a>
+                        </div>
+                        <div class="related-post">
+                            <a href="web-accessibility-guide.html">
+                                <h4>Complete Web Accessibility Guide</h4>
+                                <span class="post-date">September 25, 2025</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Comments Section (placeholder) -->
+    <section class="comments-section">
+        <div class="container">
+            <h3>Comments</h3>
+            <div class="comments-placeholder">
+                <p>Comments would be loaded here using a service like Disqus, Utterances, or a custom solution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Jeff Vincent. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/blog.js"></script>
+</body>
+</html>

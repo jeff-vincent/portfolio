@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeff Vincent's Blog - Insights on web development, technology, and programming">
+    <meta name="author" content="Jeff Vincent">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/blog/">
+    <meta property="og:title" content="Blog - Jeff Vincent">
+    <meta property="og:description" content="Insights on web development, technology, and programming">
+    <meta property="og:image" content="https://your-domain.com/assets/images/blog-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-domain.com/blog/">
+    <meta property="twitter:title" content="Blog - Jeff Vincent">
+    <meta property="twitter:description" content="Insights on web development, technology, and programming">
+    <meta property="twitter:image" content="https://your-domain.com/assets/images/blog-og.jpg">
+
+    <title>Blog - Jeff Vincent</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Jeff Vincent</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html" class="nav-link active">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <div class="blog-header-content">
+                <h1>My Blog</h1>
+                <p>Thoughts, tutorials, and insights on web development, technology, and programming.</p>
+                <div class="blog-search">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search articles...">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-list">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="web-development">Web Development</button>
+                <button class="category-btn" data-category="backend">Backend</button>
+                <button class="category-btn" data-category="devops">DevOps</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+                <button class="category-btn" data-category="career">Career</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid" id="posts-grid">
+                <!-- Featured Post -->
+                <article class="post-card featured" data-category="web-development">
+                    <div class="post-image">
+                        <img src="../assets/images/blog1.jpg" alt="Modern Web Development Practices" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="featured-badge">Featured</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">October 20, 2025</span>
+                            <span class="post-category">Web Development</span>
+                            <span class="post-read-time">8 min read</span>
+                        </div>
+                        <h2><a href="modern-web-development-practices.html">Modern Web Development Practices</a></h2>
+                        <p>Explore the latest trends and best practices in modern web development, from performance optimization to accessibility. Learn how to build faster, more maintainable applications.</p>
+                        <div class="post-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Best Practices</span>
+                        </div>
+                        <a href="modern-web-development-practices.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Regular Posts -->
+                <article class="post-card" data-category="backend">
+                    <div class="post-image">
+                        <img src="../assets/images/blog2.jpg" alt="Building Scalable APIs" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">October 15, 2025</span>
+                            <span class="post-category">Backend</span>
+                            <span class="post-read-time">12 min read</span>
+                        </div>
+                        <h3><a href="building-scalable-apis.html">Building Scalable APIs</a></h3>
+                        <p>A comprehensive guide to designing and building APIs that can scale with your application's growth. Learn about architecture patterns, caching strategies, and performance optimization.</p>
+                        <div class="post-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">API Design</span>
+                            <span class="tag">Scalability</span>
+                        </div>
+                        <a href="building-scalable-apis.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="devops">
+                    <div class="post-image">
+                        <img src="../assets/images/blog3.jpg" alt="CI/CD Best Practices" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">October 10, 2025</span>
+                            <span class="post-category">DevOps</span>
+                            <span class="post-read-time">10 min read</span>
+                        </div>
+                        <h3><a href="ci-cd-best-practices.html">CI/CD Best Practices</a></h3>
+                        <p>Learn how to implement effective continuous integration and deployment pipelines for your projects. Discover tools, strategies, and common pitfalls to avoid.</p>
+                        <div class="post-tags">
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <a href="ci-cd-best-practices.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tutorials">
+                    <div class="post-image">
+                        <img src="../assets/images/blog4.jpg" alt="React Hook Patterns" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">October 5, 2025</span>
+                            <span class="post-category">Tutorials</span>
+                            <span class="post-read-time">15 min read</span>
+                        </div>
+                        <h3><a href="react-hook-patterns.html">Advanced React Hook Patterns</a></h3>
+                        <p>Master advanced React Hook patterns to write cleaner, more reusable components. Learn about custom hooks, optimization techniques, and common patterns.</p>
+                        <div class="post-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Hooks</span>
+                            <span class="tag">Patterns</span>
+                        </div>
+                        <a href="react-hook-patterns.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="career">
+                    <div class="post-image">
+                        <img src="../assets/images/blog5.jpg" alt="Remote Work Tips" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">September 30, 2025</span>
+                            <span class="post-category">Career</span>
+                            <span class="post-read-time">7 min read</span>
+                        </div>
+                        <h3><a href="remote-work-developer.html">Remote Work Tips for Developers</a></h3>
+                        <p>Essential tips and strategies for thriving as a remote developer. Learn about productivity tools, communication best practices, and maintaining work-life balance.</p>
+                        <div class="post-tags">
+                            <span class="tag">Remote Work</span>
+                            <span class="tag">Productivity</span>
+                            <span class="tag">Career</span>
+                        </div>
+                        <a href="remote-work-developer.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="web-development">
+                    <div class="post-image">
+                        <img src="../assets/images/blog6.jpg" alt="Web Accessibility Guide" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">September 25, 2025</span>
+                            <span class="post-category">Web Development</span>
+                            <span class="post-read-time">11 min read</span>
+                        </div>
+                        <h3><a href="web-accessibility-guide.html">Complete Web Accessibility Guide</a></h3>
+                        <p>A comprehensive guide to making your websites accessible to all users. Learn about WCAG guidelines, testing tools, and implementation strategies.</p>
+                        <div class="post-tags">
+                            <span class="tag">Accessibility</span>
+                            <span class="tag">WCAG</span>
+                            <span class="tag">Inclusive Design</span>
+                        </div>
+                        <a href="web-accessibility-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-secondary" id="load-more">Load More Posts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get notified about new blog posts and updates.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Jeff Vincent. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/blog.js"></script>
+</body>
+</html>
