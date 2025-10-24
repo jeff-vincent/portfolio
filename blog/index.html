@@ -73,11 +73,11 @@
         <div class="container">
             <div class="categories-list">
                 <button class="category-btn active" data-category="all">All Posts</button>
-                <button class="category-btn" data-category="web-development">Web Development</button>
-                <button class="category-btn" data-category="backend">Backend</button>
-                <button class="category-btn" data-category="devops">DevOps</button>
-                <button class="category-btn" data-category="tutorials">Tutorials</button>
-                <button class="category-btn" data-category="career">Career</button>
+                <button class="category-btn" data-category="architecture">Architecture</button>
+                <button class="category-btn" data-category="kubernetes">Kubernetes</button>
+                <button class="category-btn" data-category="golang">Golang</button>
+                <button class="category-btn" data-category="python">Python</button>
+                <button class="category-btn" data-category="machine-learning">Machine Learning</button>
             </div>
         </div>
     </section>
@@ -87,149 +87,197 @@
         <div class="container">
             <div class="posts-grid" id="posts-grid">
                 <!-- Featured Post -->
-                <article class="post-card featured" data-category="web-development">
+                <article class="post-card featured" data-category="architecture">
                     <div class="post-image">
-                        <img src="../assets/images/blog1.jpg" alt="Modern Web Development Practices" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="../assets/images/blog1.jpg" alt="Event-Driven Architecture with FastAPI and Redis" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="post-placeholder">
-                            <i class="fas fa-blog"></i>
+                            <i class="fas fa-project-diagram"></i>
                         </div>
                         <div class="featured-badge">Featured</div>
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
-                            <span class="post-date">October 20, 2025</span>
-                            <span class="post-category">Web Development</span>
-                            <span class="post-read-time">8 min read</span>
+                            <span class="post-date">September 25, 2023</span>
+                            <span class="post-category">Architecture</span>
+                            <span class="post-read-time">11 min read</span>
                         </div>
-                        <h2><a href="modern-web-development-practices.html">Modern Web Development Practices</a></h2>
-                        <p>Explore the latest trends and best practices in modern web development, from performance optimization to accessibility. Learn how to build faster, more maintainable applications.</p>
+                        <h2><a href="https://medium.com/@velocitytech/build-an-event-driven-architecture-with-fastapi-and-redis-pub-sub-deploy-it-in-kubernetes-74ae8b4f3962" target="_blank">Build an Event-Driven Architecture with FastAPI and Redis Pub/Sub & Deploy it in Kubernetes</a></h2>
+                        <p>Request-response based networking in microservice architectures can result in unwanted latency in your cloud native application. Learn how to build event-driven microservices with FastAPI and Redis.</p>
                         <div class="post-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Performance</span>
-                            <span class="tag">Best Practices</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Kubernetes</span>
                         </div>
-                        <a href="modern-web-development-practices.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://medium.com/@velocitytech/build-an-event-driven-architecture-with-fastapi-and-redis-pub-sub-deploy-it-in-kubernetes-74ae8b4f3962" target="_blank" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
                 <!-- Regular Posts -->
-                <article class="post-card" data-category="backend">
+                <article class="post-card" data-category="kubernetes">
                     <div class="post-image">
-                        <img src="../assets/images/blog2.jpg" alt="Building Scalable APIs" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="post-placeholder">
-                            <i class="fas fa-server"></i>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">October 15, 2025</span>
-                            <span class="post-category">Backend</span>
-                            <span class="post-read-time">12 min read</span>
-                        </div>
-                        <h3><a href="building-scalable-apis.html">Building Scalable APIs</a></h3>
-                        <p>A comprehensive guide to designing and building APIs that can scale with your application's growth. Learn about architecture patterns, caching strategies, and performance optimization.</p>
-                        <div class="post-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">API Design</span>
-                            <span class="tag">Scalability</span>
-                        </div>
-                        <a href="building-scalable-apis.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="post-card" data-category="devops">
-                    <div class="post-image">
-                        <img src="../assets/images/blog3.jpg" alt="CI/CD Best Practices" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="../assets/images/blog2.jpg" alt="Getting Started with Argo Workflows" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="post-placeholder">
                             <i class="fas fa-code-branch"></i>
                         </div>
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
-                            <span class="post-date">October 10, 2025</span>
-                            <span class="post-category">DevOps</span>
-                            <span class="post-read-time">10 min read</span>
+                            <span class="post-date">September 25, 2023</span>
+                            <span class="post-category">Kubernetes</span>
+                            <span class="post-read-time">5 min read</span>
                         </div>
-                        <h3><a href="ci-cd-best-practices.html">CI/CD Best Practices</a></h3>
-                        <p>Learn how to implement effective continuous integration and deployment pipelines for your projects. Discover tools, strategies, and common pitfalls to avoid.</p>
+                        <h3><a href="https://medium.com/@velocitytech/getting-started-with-argo-workflows-e5eb6cb9853e" target="_blank">Getting Started with Argo Workflows</a></h3>
+                        <p>Argo Workflows is a K8s native workflow engine that allows you to run all kinds of workflows in Kubernetes by leveraging native resources.</p>
                         <div class="post-tags">
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Automation</span>
+                            <span class="tag">Argo</span>
+                            <span class="tag">Workflows</span>
+                            <span class="tag">Kubernetes</span>
                         </div>
-                        <a href="ci-cd-best-practices.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://medium.com/@velocitytech/getting-started-with-argo-workflows-e5eb6cb9853e" target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="post-card" data-category="tutorials">
+                <article class="post-card" data-category="kubernetes">
                     <div class="post-image">
-                        <img src="../assets/images/blog4.jpg" alt="React Hook Patterns" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="../assets/images/blog3.jpg" alt="Getting Started with K8s Init Containers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="post-placeholder">
-                            <i class="fab fa-react"></i>
+                            <i class="fas fa-cube"></i>
                         </div>
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
-                            <span class="post-date">October 5, 2025</span>
-                            <span class="post-category">Tutorials</span>
-                            <span class="post-read-time">15 min read</span>
+                            <span class="post-date">January 31, 2023</span>
+                            <span class="post-category">Kubernetes</span>
+                            <span class="post-read-time">5 min read</span>
                         </div>
-                        <h3><a href="react-hook-patterns.html">Advanced React Hook Patterns</a></h3>
-                        <p>Master advanced React Hook patterns to write cleaner, more reusable components. Learn about custom hooks, optimization techniques, and common patterns.</p>
+                        <h3><a href="https://medium.com/@velocitytech/getting-started-with-k8s-init-containers-velocity-blog-b37f97e6be98" target="_blank">Getting Started with K8s Init Containers</a></h3>
+                        <p>Learn how to use Kubernetes Init Containers to set up prerequisites and perform initialization tasks before your main application containers start.</p>
                         <div class="post-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Hooks</span>
-                            <span class="tag">Patterns</span>
+                            <span class="tag">Init Containers</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">DevOps</span>
                         </div>
-                        <a href="react-hook-patterns.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://medium.com/@velocitytech/getting-started-with-k8s-init-containers-velocity-blog-b37f97e6be98" target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="post-card" data-category="career">
+                <article class="post-card" data-category="golang">
                     <div class="post-image">
-                        <img src="../assets/images/blog5.jpg" alt="Remote Work Tips" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="../assets/images/blog4.jpg" alt="Goroutines, Channels and WaitGroups in Golang" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="post-placeholder">
-                            <i class="fas fa-home"></i>
+                            <i class="fas fa-cogs"></i>
                         </div>
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
-                            <span class="post-date">September 30, 2025</span>
-                            <span class="post-category">Career</span>
+                            <span class="post-date">January 31, 2023</span>
+                            <span class="post-category">Golang</span>
+                            <span class="post-read-time">4 min read</span>
+                        </div>
+                        <h3><a href="https://medium.com/@velocitytech/goroutines-channels-and-waitgroups-in-golang-velocity-blog-2e5e77d52b94" target="_blank">Goroutines, Channels and WaitGroups in Golang</a></h3>
+                        <p>Master concurrent programming in Go by learning how to effectively use goroutines, channels, and WaitGroups for building scalable applications.</p>
+                        <div class="post-tags">
+                            <span class="tag">Goroutines</span>
+                            <span class="tag">Concurrency</span>
+                            <span class="tag">Golang</span>
+                        </div>
+                        <a href="https://medium.com/@velocitytech/goroutines-channels-and-waitgroups-in-golang-velocity-blog-2e5e77d52b94" target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="python">
+                    <div class="post-image">
+                        <img src="../assets/images/blog5.jpg" alt="Build an Async DB Worker with MongoDB, Redis and Python" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 31, 2023</span>
+                            <span class="post-category">Python</span>
                             <span class="post-read-time">7 min read</span>
                         </div>
-                        <h3><a href="remote-work-developer.html">Remote Work Tips for Developers</a></h3>
-                        <p>Essential tips and strategies for thriving as a remote developer. Learn about productivity tools, communication best practices, and maintaining work-life balance.</p>
+                        <h3><a href="https://medium.com/@velocitytech/build-an-async-db-worker-with-mongodb-redis-and-python-and-deploy-it-in-kubernetes-velocity-blog-fb1a04099c4a" target="_blank">Build an Async DB Worker with MongoDB, Redis and Python and Deploy it in Kubernetes</a></h3>
+                        <p>Often, in order to keep an application responsive at scale, you'll need to pass long-running jobs to another process that can handle them asynchronously in the background.</p>
                         <div class="post-tags">
-                            <span class="tag">Remote Work</span>
-                            <span class="tag">Productivity</span>
-                            <span class="tag">Career</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">MongoDB</span>
                         </div>
-                        <a href="remote-work-developer.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://medium.com/@velocitytech/build-an-async-db-worker-with-mongodb-redis-and-python-and-deploy-it-in-kubernetes-velocity-blog-fb1a04099c4a" target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <article class="post-card" data-category="web-development">
+                <article class="post-card" data-category="golang">
                     <div class="post-image">
-                        <img src="../assets/images/blog6.jpg" alt="Web Accessibility Guide" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="../assets/images/blog6.jpg" alt="Build a Microservice-based App in Golang with Gin, Redis and MongoDB" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="post-placeholder">
-                            <i class="fas fa-universal-access"></i>
+                            <i class="fas fa-server"></i>
                         </div>
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
-                            <span class="post-date">September 25, 2025</span>
-                            <span class="post-category">Web Development</span>
+                            <span class="post-date">January 31, 2023</span>
+                            <span class="post-category">Golang</span>
+                            <span class="post-read-time">13 min read</span>
+                        </div>
+                        <h3><a href="https://medium.com/@velocitytech/build-a-microservice-based-app-in-golang-with-gin-redis-and-mongodb-and-deploy-it-in-k8s-92db11d02a93" target="_blank">Build a Microservice-based App in Golang with Gin, Redis and MongoDB and Deploy it in K8s</a></h3>
+                        <p>Golang is arguably the best choice of language for writing cloud native applications. Learn how to combine synchronous and asynchronous networking for distinct workflows within your app.</p>
+                        <div class="post-tags">
+                            <span class="tag">Golang</span>
+                            <span class="tag">Microservices</span>
+                            <span class="tag">Gin</span>
+                        </div>
+                        <a href="https://medium.com/@velocitytech/build-a-microservice-based-app-in-golang-with-gin-redis-and-mongodb-and-deploy-it-in-k8s-92db11d02a93" target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="python">
+                    <div class="post-image">
+                        <img src="../assets/images/blog7.jpg" alt="Asynchronous Video Streaming in Python with FastAPI and MongoDB's GridFS" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 31, 2023</span>
+                            <span class="post-category">Python</span>
                             <span class="post-read-time">11 min read</span>
                         </div>
-                        <h3><a href="web-accessibility-guide.html">Complete Web Accessibility Guide</a></h3>
-                        <p>A comprehensive guide to making your websites accessible to all users. Learn about WCAG guidelines, testing tools, and implementation strategies.</p>
+                        <h3><a href="https://medium.com/@velocitytech/asynchronous-video-streaming-in-python-with-fastapi-and-mongodbs-gridfs-velocity-blog-c920c629744e" target="_blank">Asynchronous Video Streaming in Python with FastAPI and MongoDB's GridFS</a></h3>
+                        <p>Build a simple video streaming app that demonstrates async features both in FastAPI and in the interactions it makes with MongoDB database using Motor, the async Python driver.</p>
                         <div class="post-tags">
-                            <span class="tag">Accessibility</span>
-                            <span class="tag">WCAG</span>
-                            <span class="tag">Inclusive Design</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Streaming</span>
                         </div>
-                        <a href="web-accessibility-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://medium.com/@velocitytech/asynchronous-video-streaming-in-python-with-fastapi-and-mongodbs-gridfs-velocity-blog-c920c629744e" target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="machine-learning">
+                    <div class="post-image">
+                        <img src="../assets/images/blog8.jpg" alt="Deploy a PyTorch ML Model in K8s and Cache Results in Redis" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="post-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 31, 2023</span>
+                            <span class="post-category">Machine Learning</span>
+                            <span class="post-read-time">7 min read</span>
+                        </div>
+                        <h3><a href="https://medium.com/@velocitytech/deploy-a-pytorch-ml-model-in-k8s-and-cache-results-in-redis-velocity-blog-b6836d4031b9" target="_blank">Deploy a PyTorch ML Model in K8s and Cache Results in Redis</a></h3>
+                        <p>ML elements of applications often require a significant amount of processing time. Learn how to speed up your microservice-based ML app with asynchronous networking and in-memory data caching.</p>
+                        <div class="post-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                        <a href="https://medium.com/@velocitytech/deploy-a-pytorch-ml-model-in-k8s-and-cache-results-in-redis-velocity-blog-b6836d4031b9" target="_blank" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
