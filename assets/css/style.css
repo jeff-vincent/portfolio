@@ -362,6 +362,133 @@ section {
     color: var(--text-primary);
 }
 
+/* Experience Section */
+.experience {
+    background-color: var(--bg-primary);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-light));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 1.25rem;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--primary-color);
+    border: 4px solid var(--bg-primary);
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 1.5rem;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: var(--bg-secondary);
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.timeline-content h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.timeline-date {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.timeline-tech .tech-tag {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Mobile Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 1rem;
+    }
+    
+    .timeline-item {
+        padding-left: 3rem;
+    }
+    
+    .timeline-dot {
+        left: 0.25rem;
+    }
+    
+    .timeline-content::before {
+        left: -8px;
+        border-width: 8px;
+    }
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
