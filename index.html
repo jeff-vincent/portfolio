@@ -39,7 +39,6 @@
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#blog" class="nav-link">Blog</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -94,10 +93,6 @@
                         (Python, Go, JavaScript). I've built everything from Python SDKs and GitHub Actions integrations 
                         to multi-tenant cloud platforms and MLOps demos. I excel at translating complex technical concepts 
                         into accessible solutions and bridging the gap between engineering teams and developer communities.
-                    </p>
-                    <p>
-                        <strong>Currently seeking:</strong> Software Engineer or Senior Developer Advocate roles where 
-                        I can leverage both my technical skills and communication expertise.
                     </p>
                 </div>
                 <div class="skills">
@@ -157,82 +152,134 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>MongoDB</h3>
-                        <h4>Technical Writer</h4>
-                        <span class="timeline-date">Dec 2023 – Present</span>
-                        <p>Write documentation for MongoDB Controllers for Kubernetes (MCK) while building internal automation tools. Created Python scripts for local MCK deployment, YAML-to-reST converters, and deployed self-hosted GitHub Actions runners in K8s. Collaborate with engineering teams on docs strategy for multi-region, multi-cluster deployments.</p>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">GitHub Actions</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Velocity (Kubernetes Startup)</h3>
-                        <h4>Technical Writer</h4>
-                        <span class="timeline-date">Jun 2022 – Dec 2023</span>
-                        <p>Owned developer documentation across product lines, building end-to-end demos for MLOps pipelines, AI/ML workloads, and cloud-native deployments. Created "Velocity Byte Sized" video series teaching Kubernetes concepts. Authored technical blogs on distributed systems and developer tooling, requiring hands-on implementation of complex systems.</p>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">MLOps</span>
-                            <span class="tech-tag">Cloud-Native</span>
-                            <span class="tech-tag">Video Production</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>MacStadium</h3>
-                        <h4>Technical Writer / Developer Relations Engineer</h4>
-                        <span class="timeline-date">Jan 2019 – Jun 2022</span>
-                        <p>Led documentation strategy for Orka, MacStadium's Kubernetes-based virtualization platform. Built open-source Python SDK and GitHub Actions integration for ephemeral CI runners. Presented webinars and co-hosted panels, translating complex CI/CD and Kubernetes topics for diverse audiences.</p>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Python SDK</span>
-                            <span class="tech-tag">GitHub Actions</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">CI/CD</span>
-                            <span class="tech-tag">DevRel</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Earlier Experience</h3>
-                        <h4>Software Developer & Technical Writer</h4>
-                        <span class="timeline-date">2018 – 2019</span>
-                        <p>Full-stack development and technical writing roles at North Shore Automation, HumanDX, and Eek inc. Built web applications, APIs, and developer documentation across healthcare, automation, and frontend development domains.</p>
-                        <div class="timeline-tech">
-                            <span class="tech-tag">Full-Stack</span>
-                            <span class="tech-tag">APIs</span>
-                            <span class="tech-tag">Technical Writing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Hero Project Card -->
+            <div class="hero-project-card">
+                <div class="hero-project-content">
+                    <div class="hero-project-text">
+                        <h3>Labbrly</h3>
+                        <p class="hero-project-subtitle">Cloud-Native Development Environment Platform</p>
+                        <p class="hero-project-description">
+                            A sophisticated multi-tenant cloud development platform built on Kubernetes. Features include 
+                            per-user compute pods, containerized build systems, integrated authentication, and real-time 
+                            collaboration tools. Deployed at scale with full observability and monitoring.
+                        </p>
+                        <div class="hero-project-tech">
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">Auth0</span>
+                        </div>
+                        <div class="hero-project-links">
+                            <a href="https://subnode1.xyz/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> Live Platform
+                            </a>
+                            <a href="https://github.com/jeff-vincent" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-project-visual">
+                        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" alt="Labbrly Cloud Platform Architecture">
+                            <defs>
+                                <linearGradient id="labbrlyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="podGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                                </linearGradient>
+                                <filter id="heroGlow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            
+                            <!-- Background -->
+                            <rect width="500" height="300" fill="url(#labbrlyGradient)" rx="10"/>
+                            
+                            <!-- Cloud Infrastructure -->
+                            <g transform="translate(50,40)">
+                                <!-- Kubernetes Cluster -->
+                                <rect width="400" height="160" rx="15" fill="#ffffff" opacity="0.15" stroke="#ffffff" stroke-width="2"/>
+                                <text x="200" y="25" text-anchor="middle" fill="white" font-family="monospace" font-size="14" font-weight="bold">☸️ Kubernetes Cluster</text>
+                                
+                                <!-- User Pods -->
+                                <g transform="translate(30,40)">
+                                    <rect width="80" height="50" rx="8" fill="url(#podGradient)" filter="url(#heroGlow)" opacity="0.9"/>
+                                    <text x="40" y="25" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">👤 Dev Pod</text>
+                                    <text x="40" y="38" text-anchor="middle" fill="white" font-family="monospace" font-size="8">User 1</text>
+                                </g>
+                                
+                                <g transform="translate(160,40)">
+                                    <rect width="80" height="50" rx="8" fill="url(#podGradient)" filter="url(#heroGlow)" opacity="0.9"/>
+                                    <text x="40" y="25" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">👤 Dev Pod</text>
+                                    <text x="40" y="38" text-anchor="middle" fill="white" font-family="monospace" font-size="8">User 2</text>
+                                </g>
+                                
+                                <g transform="translate(290,40)">
+                                    <rect width="80" height="50" rx="8" fill="url(#podGradient)" filter="url(#heroGlow)" opacity="0.9"/>
+                                    <text x="40" y="25" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">👤 Dev Pod</text>
+                                    <text x="40" y="38" text-anchor="middle" fill="white" font-family="monospace" font-size="8">User 3</text>
+                                </g>
+                                
+                                <!-- Build System -->
+                                <g transform="translate(120,110)">
+                                    <rect width="160" height="35" rx="8" fill="#4caf50" filter="url(#heroGlow)" opacity="0.9"/>
+                                    <text x="80" y="22" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">🔨 Container Build System</text>
+                                </g>
+                            </g>
+                            
+                            <!-- Data Layer -->
+                            <g transform="translate(50,220)">
+                                <rect width="120" height="40" rx="8" fill="#ff6b6b" filter="url(#heroGlow)" opacity="0.9"/>
+                                <text x="60" y="25" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">🍃 MongoDB</text>
+                                
+                                <rect width="120" height="40" rx="8" fill="#dc382d" filter="url(#heroGlow)" opacity="0.9" transform="translate(140,0)"/>
+                                <text x="200" y="25" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">⚡ Redis</text>
+                                
+                                <rect width="120" height="40" rx="8" fill="#2196f3" filter="url(#heroGlow)" opacity="0.9" transform="translate(280,0)"/>
+                                <text x="340" y="25" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">🔐 Auth0</text>
+                            </g>
+                            
+                            <!-- Connection Lines -->
+                            <g stroke="#ffffff" stroke-width="2" opacity="0.6" fill="none">
+                                <path d="M120 190 L120 220">
+                                    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+                                </path>
+                                <path d="M250 190 L250 220">
+                                    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="1.8s" repeatCount="indefinite"/>
+                                </path>
+                                <path d="M380 190 L380 220">
+                                    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
+                                </path>
+                            </g>
+                            
+                            <!-- Floating Elements -->
+                            <circle cx="420" cy="50" r="3" fill="#ffffff" opacity="0.6">
+                                <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="60" cy="80" r="2" fill="#ffffff" opacity="0.5">
+                                <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.5s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
