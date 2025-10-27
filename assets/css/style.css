@@ -832,6 +832,110 @@ section {
     text-align: center;
 }
 
+/* Videos Section */
+.videos {
+    padding: 5rem 0;
+    background: var(--bg-primary);
+}
+
+.videos-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.videos-intro p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.video-card {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-content {
+    padding: 1.5rem;
+}
+
+.video-content h3 {
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+}
+
+.video-content p {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.video-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.video-duration,
+.video-topic {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.video-duration {
+    background: var(--primary-color);
+    color: white;
+}
+
+.video-topic {
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+.videos-cta {
+    text-align: center;
+}
+
+.videos-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 /* Contact Section */
 .contact-content {
     display: grid;
@@ -1050,6 +1154,15 @@ section {
 
     .blog-grid {
         grid-template-columns: 1fr;
+    }
+
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .video-card {
+        margin-bottom: 1rem;
     }
 
     .contact-content {
